@@ -43,26 +43,96 @@ let dadosConta = {}
 // endPoint para recupera uma lista de todos os cursos oferecidos pela escola. 
 app.get('/v1/lion-school/cursos', cors(), async function(request, response, next) {
 
+    let todosCursos = funcoes.getCursos()
+
+    if (todosCursos) {
+        response.json(todosCursos)
+        response.status(200)
+    } else {
+        response.status(500)
+    }
+
 })
 
 // 	endPoint para recupera uma lista de todos os alunos matriculados na escola.
 app.get('/v1/lion-school/alunos', cors(), async function (request, response, next) {
     
+    let todosAlunos = funcoes.getListaAlunos()
+
+    if (todosAlunos) {
+        response.json(todosAlunos)
+        response.status(200)
+    } else {
+        response.status(500)
+    }
 })
 
 // 	endPoint para recupera informações de um aluno específico com base no número de matrícula.
 app.get('/v1/lion-school/aluno', cors(), async function (request, response, next) {
+    
+    let numeroMatricula = request.query.matricula
 
+    if (numeroMatricula == '' || numeroMatricula == undefined || isNaN(numeroMatricula)) {
+        statusCode = 400
+        dadosConta.message = "Não é possivel processar a requisição pois o número da matricula está incorreto"
+    } else {
+        let aluno = funcoes.getMatricula(numeroMatricula)
+
+        if (aluno) {
+            statusCode = 200
+            dadosConta = aluno
+        } else {
+            statusCode = 400
+        }
+    }
+    response.status(statusCode)
+    response.json(dadosConta)
 })
 
 // 	endPoint para recupera uma lista de todos os alunos matriculados no curso especificado.
 app.get('/v1/lion-school/alunos/curso', cors(), async function (request, response, next) {
 
+    let siglaCurso = request.query.sigla
+
+    if (siglaCurso == '' || siglaCurso == undefined || !isString(siglaCurso)) {
+        statusCode = 400
+        dadosConta.message = "Não é possivel processar a requisição pois a sigla do curso está incorreto"
+    } else {
+
+        let curso = funcoes.getSiglaCurso(siglaCurso)
+
+        if (curso) {
+            statusCode = 200
+            dadosConta = curso
+        } else {
+            statusCode = 400
+        }
+    }
+    response.status(statusCode)
+    response.json(dadosConta)
 })
 
 // 	endPoint para recupera uma lista de todos os alunos com o status especificado.
 app.get('/v1/lion-school/alunos/status', cors(), async function (request, response, next) {
     
+    let statusAluno = request.query.status
+    
+    if (statusAluno == "" || statusAluno == undefined || !isString(statusAluno)) {
+        
+        statusAluno = 400
+        dadosConta.message = "Não é possivel processar a requisição pois o status está incorreto"
+    } else {
+        let aluno = funcoes.getStatus(statusAluno)
+
+        if (aluno) {
+            statusCode = 200
+            dadosConta = aluno
+        } else {
+            statusCode = 400
+        }
+    }
+    response.status(statusCode)
+    response.json(dadosConta)
 })
 
 //  Permite carregar os endpoint criados e aguadar as requisições
