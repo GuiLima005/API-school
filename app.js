@@ -94,12 +94,12 @@ app.get('/v1/lion-school/alunos/curso', cors(), async function (request, respons
 
     let siglaCurso = request.query.sigla
 
-    if (siglaCurso == '' || siglaCurso == undefined || !isString(siglaCurso)) {
+    if (siglaCurso == '' || siglaCurso == undefined) {
         statusCode = 400
         dadosConta.message = "Não é possivel processar a requisição pois a sigla do curso está incorreto"
     } else {
 
-        let curso = funcoes.getSiglaCurso(siglaCurso)
+        let curso = funcoes.getAlunos(siglaCurso)
 
         if (curso) {
             statusCode = 200

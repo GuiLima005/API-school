@@ -682,6 +682,114 @@ var alunos = [
                 },
             ],
             "status" : "Cursando"
+        },
+        {
+            "foto"  : "https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png",
+            "nome"  : "Guilherme de Oliveira Lima",
+            "matricula" : "20151001024",
+            "sexo"  :   "M",
+            "curso" : [
+                {
+                    "nome"  :   "001 - Técnico em Desenvolvimento de Sistemas",
+                    "sigla" :   "NVS",
+                    "icone" :   "https://image.shutterstock.com/image-vector/api-interface-vector-icon-600w-659203513.jpg",
+                    "carga" :   "1200",
+                    "conclusao" :   "2023",
+                    "disciplinas"   :   [
+                        {
+                            "nome"  :   "Sistemas Operacionais",
+                            "carga" :   "75",
+                            "media" :   "50",
+                            "status":   "Exame"
+                        },
+                        {
+                            "nome"  :   "Introdução a Programação",
+                            "carga" :   "150",
+                            "media" :   "40",
+                            "status":   "Reprovado"
+                        },
+                        {
+                            "nome"  :   "Linguagem de Marcação",
+                            "carga" :   "120",
+                            "media" :   "80",
+                            "status":   "Aprovado"
+                        },
+                        {
+                            "nome"  :   "Banco de Dados",
+                            "carga" :   "75",
+                            "media" :   "60",
+                            "status":   "Exame"
+                        },
+                        {
+                            "nome"  :   "Programação Web Back End",
+                            "carga" :   "240",
+                            "media" :   "90",
+                            "status":   "Aprovado"
+                        },
+                        {
+                            "nome"  :   "Programação Web Front End",
+                            "carga" :   "150",
+                            "media" :   "80",
+                            "status":   "Aprovado"
+                        }
+                    ]
+                },
+            ],
+            "status" : "Cursando"
+        },
+        {
+            "foto"  : "https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png",
+            "nome"  : "Miguel Jaquim de Oliveira",
+            "matricula" : "20151001024",
+            "sexo"  :   "M",
+            "curso" : [
+                {
+                    "nome"  :   "001 - Técnico em Desenvolvimento de Sistemas",
+                    "sigla" :   "TDS",
+                    "icone" :   "https://image.shutterstock.com/image-vector/api-interface-vector-icon-600w-659203513.jpg",
+                    "carga" :   "1200",
+                    "conclusao" :   "2023",
+                    "disciplinas"   :   [
+                        {
+                            "nome"  :   "Sistemas Operacionais",
+                            "carga" :   "75",
+                            "media" :   "50",
+                            "status":   "Exame"
+                        },
+                        {
+                            "nome"  :   "Introdução a Programação",
+                            "carga" :   "150",
+                            "media" :   "40",
+                            "status":   "Reprovado"
+                        },
+                        {
+                            "nome"  :   "Linguagem de Marcação",
+                            "carga" :   "120",
+                            "media" :   "80",
+                            "status":   "Aprovado"
+                        },
+                        {
+                            "nome"  :   "Banco de Dados",
+                            "carga" :   "75",
+                            "media" :   "60",
+                            "status":   "Exame"
+                        },
+                        {
+                            "nome"  :   "Programação Web Back End",
+                            "carga" :   "240",
+                            "media" :   "90",
+                            "status":   "Aprovado"
+                        },
+                        {
+                            "nome"  :   "Programação Web Front End",
+                            "carga" :   "150",
+                            "media" :   "80",
+                            "status":   "Aprovado"
+                        }
+                    ]
+                },
+            ],
+            "status" : "Finalizado"
         }
     ];
 
