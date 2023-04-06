@@ -11,7 +11,7 @@ function getCursos() {
 
     let json = {
       icon: cursosFill.icone,
-      nome: cursosFill.nome.slice(6,50),
+      nome: cursosFill.nome.slice(17,50),
       sigla: cursosFill.sigla
     }
     // "001 - Técnico em Desenvolvimento de Sistemas".slice(6,50)
