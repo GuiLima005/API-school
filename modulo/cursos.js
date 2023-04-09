@@ -11,15 +11,19 @@ var cursos = [
         "icone" :   "https://img.icons8.com/ultraviolet/344/thin-client.png",
         "carga" :   "1200"
     },
+    
+    // Curso IA
     {
-        "nome"  :   "003 - Técnico em Redes de Computadores",
-        "sigla" :   "NVS",
+        "nome"  :   "003 - Técnico em Inteligência Artificial",
+        "sigla" :   "IA",
         "icone" :   "https://img.icons8.com/ultraviolet/344/thin-client.png",
         "carga" :   "1200"
     },
+
+    // Curso CST
     {
-        "nome"  :   "004 - Técnico em Redes de Computadores",
-        "sigla" :   "TDS",
+        "nome"  :   "004 - Técnico em Ciências da Computação",
+        "sigla" :   "CST",
         "icone" :   "https://image.shutterstock.com/image-vector/api-interface-vector-icon-600w-659203513.jpg",
         "carga" :   "1200"
     }

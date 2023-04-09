@@ -11,7 +11,7 @@ function getCursos() {
 
     let json = {
       icon: cursosFill.icone,
-      nome: cursosFill.nome.slice(17,50),
+      nome: cursosFill.nome.slice(17, 50),
       sigla: cursosFill.sigla
     }
     // "001 - Técnico em Desenvolvimento de Sistemas".slice(6,50)
@@ -20,7 +20,6 @@ function getCursos() {
   })
 
   cursosJ.curso = array
-
   return cursosJ
 }
 
@@ -45,13 +44,58 @@ function getAlunos(sigla) {
   } else {
     return status
   }
-
 }
 
-// console.log(getAlunos('DS'));
+function getMatricula(matricula) {
 
+  let json = {}
+  let array = []
+
+  alunoJson.alunos.forEach(function (dadosFillter) {
+
+    dadosFillter.curso.forEach(function (curso) {
+
+      if (matricula == dadosFillter.matricula) {
+        json = {
+          nome: dadosFillter.nome,
+          foto: dadosFillter.foto,
+          diciplina: curso.disciplinas
+        }
+      }
+      array.push(json)
+    })
+  })
+  return json
+}
+
+function getListaAlunos() {
+
+  let dadosJ = {}
+  let array = []
+
+  alunoJson.alunos.forEach(function (alunos) {
+
+    let json = {
+      foto: alunos.foto,
+      nome: alunos.nome,
+      matricula: alunos.matricula,
+    }
+
+    array.push(json)
+  })
+  dadosJ.alunos = array
+  return dadosJ
+
+}
+// console.log(getListaAlunos())
+// console.log(getMatricula("20151001016"))
+// console.log(getCursos())
+// console.log(getAlunos("DS"));
 
 module.exports = {
   getCursos,
-  getAlunos
+  getAlunos,
+  getMatricula,
+  getListaAlunos,
+  // getStatus
 }

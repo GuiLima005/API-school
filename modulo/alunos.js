@@ -683,15 +683,17 @@ var alunos = [
             ],
             "status" : "Cursando"
         },
+
+        // Guilherme
         {
             "foto"  : "https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png",
-            "nome"  : "Guilherme de Oliveira Lima",
-            "matricula" : "20151001024",
+            "nome"  : "Guilherme Lima",
+            "matricula" : "30151001024",
             "sexo"  :   "M",
             "curso" : [
                 {
-                    "nome"  :   "001 - Técnico em Desenvolvimento de Sistemas",
-                    "sigla" :   "NVS",
+                    "nome"  :   "003 - Técnico em Inteligência Artificial",
+                    "sigla" :   "IA",
                     "icone" :   "https://image.shutterstock.com/image-vector/api-interface-vector-icon-600w-659203513.jpg",
                     "carga" :   "1200",
                     "conclusao" :   "2023",
@@ -699,13 +701,13 @@ var alunos = [
                         {
                             "nome"  :   "Sistemas Operacionais",
                             "carga" :   "75",
-                            "media" :   "50",
+                            "media" :   "100",
                             "status":   "Exame"
                         },
                         {
                             "nome"  :   "Introdução a Programação",
                             "carga" :   "150",
-                            "media" :   "40",
+                            "media" :   "90",
                             "status":   "Reprovado"
                         },
                         {
@@ -737,15 +739,17 @@ var alunos = [
             ],
             "status" : "Cursando"
         },
-        {
-            "foto"  : "https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png",
-            "nome"  : "Miguel Jaquim de Oliveira",
-            "matricula" : "20151001024",
-            "sexo"  :   "M",
+
+         // Maria
+         {
+            "foto"  : "https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-4-avatar-2754580_120522.png",
+            "nome"  : "Maria da Silva",
+            "matricula" : "31151001024",
+            "sexo"  :   "F",
             "curso" : [
                 {
-                    "nome"  :   "001 - Técnico em Desenvolvimento de Sistemas",
-                    "sigla" :   "TDS",
+                    "nome"  :   "003 - Técnico em Inteligência Artificial",
+                    "sigla" :   "IA",
                     "icone" :   "https://image.shutterstock.com/image-vector/api-interface-vector-icon-600w-659203513.jpg",
                     "carga" :   "1200",
                     "conclusao" :   "2023",
@@ -753,25 +757,81 @@ var alunos = [
                         {
                             "nome"  :   "Sistemas Operacionais",
                             "carga" :   "75",
-                            "media" :   "50",
+                            "media" :   "90",
                             "status":   "Exame"
                         },
                         {
                             "nome"  :   "Introdução a Programação",
                             "carga" :   "150",
-                            "media" :   "40",
+                            "media" :   "90",
                             "status":   "Reprovado"
                         },
                         {
                             "nome"  :   "Linguagem de Marcação",
                             "carga" :   "120",
-                            "media" :   "80",
+                            "media" :   "100",
                             "status":   "Aprovado"
                         },
                         {
                             "nome"  :   "Banco de Dados",
                             "carga" :   "75",
+                            "media" :   "40",
+                            "status":   "Exame"
+                        },
+                        {
+                            "nome"  :   "Programação Web Back End",
+                            "carga" :   "240",
                             "media" :   "60",
+                            "status":   "Aprovado"
+                        },
+                        {
+                            "nome"  :   "Programação Web Front End",
+                            "carga" :   "150",
+                            "media" :   "30",
+                            "status":   "Aprovado"
+                        }
+                    ]
+                },
+            ],
+            "status" : "Finalizado"
+        },
+
+        // Miguel
+        {
+            "foto"  : "https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-8-avatar-2754583_120515.png",
+            "nome"  : "Miguel Joaquim",
+            "matricula" : "40151001024",
+            "sexo"  :   "M",
+            "curso" : [
+                {
+                    "nome"  :   "004 - Técnico em Ciências da Computação",
+                    "sigla" :   "CST",
+                    "icone" :   "https://image.shutterstock.com/image-vector/api-interface-vector-icon-600w-659203513.jpg",
+                    "carga" :   "1200",
+                    "conclusao" :   "2023",
+                    "disciplinas"   :   [
+                        {
+                            "nome"  :   "Sistemas Operacionais",
+                            "carga" :   "75",
+                            "media" :   "98",
+                            "status":   "Exame"
+                        },
+                        {
+                            "nome"  :   "Introdução a Programação",
+                            "carga" :   "150",
+                            "media" :   "100",
+                            "status":   "Reprovado"
+                        },
+                        {
+                            "nome"  :   "Linguagem de Marcação",
+                            "carga" :   "120",
+                            "media" :   "90",
+                            "status":   "Aprovado"
+                        },
+                        {
+                            "nome"  :   "Banco de Dados",
+                            "carga" :   "75",
+                            "media" :   "92",
                             "status":   "Exame"
                         },
                         {
@@ -783,13 +843,69 @@ var alunos = [
                         {
                             "nome"  :   "Programação Web Front End",
                             "carga" :   "150",
-                            "media" :   "80",
+                            "media" :   "96",
                             "status":   "Aprovado"
                         }
                     ]
                 },
             ],
             "status" : "Finalizado"
+        },
+
+        // Fernanda
+        {
+            "foto"  : "https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-4-avatar-2754580_120522.png",
+            "nome"  : "Fernanda Oliveira",
+            "matricula" : "32151001024",
+            "sexo"  :   "F",
+            "curso" : [
+                {
+                    "nome"  :   "004 - Técnico em Ciências da Computação",
+                    "sigla" :   "CST",
+                    "icone" :   "https://image.shutterstock.com/image-vector/api-interface-vector-icon-600w-659203513.jpg",
+                    "carga" :   "1200",
+                    "conclusao" :   "2023",
+                    "disciplinas"   :   [
+                        {
+                            "nome"  :   "Sistemas Operacionais",
+                            "carga" :   "75",
+                            "media" :   "40",
+                            "status":   "Exame"
+                        },
+                        {
+                            "nome"  :   "Introdução a Programação",
+                            "carga" :   "150",
+                            "media" :   "100",
+                            "status":   "Reprovado"
+                        },
+                        {
+                            "nome"  :   "Linguagem de Marcação",
+                            "carga" :   "120",
+                            "media" :   "60",
+                            "status":   "Aprovado"
+                        },
+                        {
+                            "nome"  :   "Banco de Dados",
+                            "carga" :   "75",
+                            "media" :   "75",
+                            "status":   "Exame"
+                        },
+                        {
+                            "nome"  :   "Programação Web Back End",
+                            "carga" :   "240",
+                            "media" :   "86",
+                            "status":   "Aprovado"
+                        },
+                        {
+                            "nome"  :   "Programação Web Front End",
+                            "carga" :   "150",
+                            "media" :   "30",
+                            "status":   "Aprovado"
+                        }
+                    ]
+                },
+            ],
+            "status" : "Cursando"
         }
     ];
 
