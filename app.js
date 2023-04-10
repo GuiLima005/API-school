@@ -68,7 +68,7 @@ app.get('/v1/lion-school/alunos', cors(), async function (request, response, nex
 })
 
 // 	endPoint para recupera informações de um aluno específico com base no número de matrícula.
-app.get('/v1/lion-school/aluno', cors(), async function (request, response, next) {
+app.get('/v1/lion-school/matricula', cors(), async function (request, response, next) {
     
     let numeroMatricula = request.query.matricula
 
@@ -99,7 +99,7 @@ app.get('/v1/lion-school/alunos/curso', cors(), async function (request, respons
         dadosConta.message = "Não é possivel processar a requisição pois a sigla do curso está incorreto"
     } else {
 
-        let curso = funcoes.getAlunos(siglaCurso)
+        let curso = funcoes.getAlunosCurso(siglaCurso)
 
         if (curso) {
             statusCode = 200
@@ -117,7 +117,7 @@ app.get('/v1/lion-school/alunos/status', cors(), async function (request, respon
     
     let statusAluno = request.query.status
     
-    if (statusAluno == "" || statusAluno == undefined || !isString(statusAluno)) {
+    if (statusAluno == "" || statusAluno == undefined) {
         
         statusAluno = 400
         dadosConta.message = "Não é possivel processar a requisição pois o status está incorreto"

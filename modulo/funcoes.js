@@ -23,7 +23,7 @@ function getCursos() {
   return cursosJ
 }
 
-function getAlunos(sigla) {
+function getAlunosCurso(sigla) {
 
   let json = {}
   let array = []
@@ -79,6 +79,7 @@ function getListaAlunos() {
       foto: alunos.foto,
       nome: alunos.nome,
       matricula: alunos.matricula,
+      status: alunos.status
     }
 
     array.push(json)
@@ -87,15 +88,52 @@ function getListaAlunos() {
   return dadosJ
 
 }
-// console.log(getListaAlunos())
-// console.log(getMatricula("20151001016"))
+
+
+function getStatus(status) {
+
+
+  let SpecificJ = {}
+
+  let json = {}
+
+  let array = []
+
+  alunoJson.alunos.forEach(function (Specific) {
+
+      if (status == Specific.status) {
+
+          json = {
+              nome: Specific.nome,
+              foto: Specific.foto,
+              matricula: Specific.matricula,
+              status: Specific.status
+          }
+
+          array.push(json)
+      }
+
+  })
+  SpecificJ.dados = array
+
+  return SpecificJ
+}
+
 // console.log(getCursos())
-// console.log(getAlunos("DS"));
+
+// console.log(getAlunosCurso("DS"));
+
+console.log(getMatricula("20151001016"))
+
+// console.log(getListaAlunos())
+
+// console.log(getStatus('Cursando'))
+
 
 module.exports = {
   getCursos,
-  getAlunos,
+  getAlunosCurso,
   getMatricula,
   getListaAlunos,
-  // getStatus
+  getStatus
 }
